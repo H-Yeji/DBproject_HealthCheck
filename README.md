@@ -313,21 +313,51 @@
   <pre><code>
   CALL viewFriendsGoal('yeji','dding2'); 
   </code></pre>
-  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/9d87e0eb-2385-4f0b-9fe1-a8a6346e15dd"><br>
-  입력받은 두 회원이 친구일 경우 -> 친구의 목표 조회 가능
-  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/29aff8f7-8f86-4233-afc8-581a26a2f34b"><br>
-  입력받은 두 회원이 친구가 아닐 경우 -> 친구의 목표 조회 불가능 
+  <img src=""><br>
+  입력받은 두 회원이 친구일 경우 -> 친구의 목표 조회 가능<br>
+  <img src=""><br>
+  입력받은 두 회원이 친구가 아닐 경우 -> 친구의 목표 조회 불가능<br>  
   <br>
   <br>
   (3) 친구 진행 상황 조회 프로시저
   <pre><code>
   CALL viewFriendsProgress('yeji','dding2');
   </code></pre>
-  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/24f3d3b1-c334-4e9d-a53d-dc98981450e0"><br>
+  <img src=""><br> 
   내 닉네임과 친구의 닉네임을 입력하면 친구의 진행 상황 조회 가능 
 </details> 
 <details>
   <summary>게시글 테이블 프로시저</summary>
+  (1) 게시글 등록 프로시저 
+  <pre><code>
+  CALL write_post('qkdrmawll', 'hi', 'hello'); 
+  </code></pre>
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/8e03eea7-c2e6-4de7-b1ce-5b69fa11c7b5"><br> 
+  id=17 게시글 등록 
+  <br>
+  <br> 
+  (2) 게시글 수정 프로시저 
+  <pre><code>
+  CALL update_post (17, 'new title', 'new contents'); 
+  </code></pre>
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/38e5fa9b-e966-4655-bcd8-e913e44edbc0"><br> 
+  id=17인 게시물의 제목과 내용 수정 
+  <br>
+  <br>
+  (3) 게시글 작성자로 조회 프로시저 
+  <pre><code>
+ CALL search_by_author ('qkdrmawll');
+  </code></pre>
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/f504ebf5-649e-4657-9d6b-c59968907e01"><br> 
+  닉네임으로 해당 회원의 게시글 조회 
+  <br>
+  <br>
+  (4) 게시글 제목으로 조회 프로시저  
+  <pre><code>
+  CALL search_by_title ('h'); 
+  </code></pre>
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/3b002d4f-7e28-44d1-9ce1-fc37a3f29e85"><br> 
+  입력받은 내용이 제목으로 들어간 게시글 조회  
 </details> 
 <details>
   <summary>댓글 테이블 프로시저</summary>
