@@ -2,7 +2,6 @@
 ![image](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/38fb1ecf-d0dd-4492-be0a-eb60d4c87e75)
 <br>
 <br>
-<br>
 
 <hr> 
 
@@ -29,36 +28,29 @@
 </code></pre>
 <br>
 
-### 💡 프로젝트 필요성 
-<pre><code>
-
-
-	
-</code></pre>
-<br> 
-
 ### 📌 기술 스택
  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> 
 <br>
 <br> 
-<br>
 
 <hr> 
 
 ### 📅 WBS (Work Breakdown Structure)
-![image](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/ae703dfe-38a7-4ac6-96e3-74ffb63086b3)
+[[WBS 바로가기]](https://docs.google.com/spreadsheets/d/1kbN5XonKJiKncqxmrI0m85HVIuabvkAwmK7VqzdzByo/edit#gid=0)<Br> 
+<br> 
+![image](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/c7f092df-e912-4a57-80b0-376bb21302dc) 
 <br>
 <br>
 
 ### 📝 요구사항 명세서 
 [[요구사항 명세서 바로가기]](https://docs.google.com/spreadsheets/d/1kbN5XonKJiKncqxmrI0m85HVIuabvkAwmK7VqzdzByo/edit?usp=sharing)
 <br>
-<br>
 <br> 
+
+<hr> 
 
 ### 🎨 ERD
 ![image](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/c5932e45-79de-4592-a872-a6a4ae8edefb)
-<br>
 <br>
 <br>
 
@@ -224,7 +216,6 @@
 	    	foreign key(user_id) references users(id)
   	); 
 ```
-<br>
 <br>
 
 <hr> 
