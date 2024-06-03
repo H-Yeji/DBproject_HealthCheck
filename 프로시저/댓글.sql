@@ -34,3 +34,4 @@ BEGIN
     UPDATE reply SET contents = new_reply_contents WHERE id = reply_id;
 END //
 DELIMITER ;
+
