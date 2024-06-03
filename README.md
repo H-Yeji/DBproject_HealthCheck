@@ -65,18 +65,18 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	
  ```sql 
 	DELIMITER //
-	CREATE PROCEDURE signUp(in nickname VARCHAR(255), in name VARCHAR(255), in email VARCHAR(255), in password VARCHAR(255), in phoneNumber VARCHAR(255), in age INT, in sex VARCHAR(255))
+	CREATE PROCEDURE 회원가입(in 닉네임 VARCHAR(255), in 이름 VARCHAR(255), in 이메일 VARCHAR(255), in 비밀번호 VARCHAR(255), in 전화번호 VARCHAR(255), in 나이 INT, in 성별 VARCHAR(255))
 	BEGIN  
-		INSERT INTO users(nickname, name, email, password, phone_number, age, sex)
-		VALUES (nickname, name, email, password, phoneNumber, age, sex);
+	INSERT INTO users(nickname, name, email, password, phone_number, age, sex)
+ 	 VALUES (닉네임, 이름, 이메일, 비밀번호, 전화번호, 나이, 성별);
 	END
-	// DELIMITER ; 
+	// DELIMITER ;
 ```
 
 <br>
 <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0652b889-338a-4572-bbd3-3a19db149c75">
 	<pre><code>
-	CALL signUp('suguri', 'suguri', 'suguri@naver.com', '2341', '010-1111-2222', 27, 'F'); 
+	CALL 회원가입('suguri', 'suguri', 'suguri@naver.com', '2341', '010-1111-2222', 27, 'F'); 
 	</code></pre>
 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0ca77572-a380-4d7c-aed3-a28eda91df9d">
 	user_id=5 회원 추가 
@@ -89,15 +89,16 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 
 ```sql
 	DELIMITER //
-	CREATE PROCEDURE setGoal(in userFind VARCHAR(255), in goalType VARCHAR(255), in dDay VARCHAR(255), in setTarget DECIMAL(10,2))
+	CREATE PROCEDURE 목표등록(in 닉네임 VARCHAR(255), in 목표타입 VARCHAR(255), in 목표기한 VARCHAR(255), in 목표무게 DECIMAL(10,2))
 	BEGIN  
-		DECLARE userId int;
-		SELECT id into userId from users where nickname = userFind;
-		INSERT INTO goal(user_id, goal, target_date, target_kg)
-    	VALUES (userId, goalType, dDay, setTarget);
+	DECLARE userId int;
+	SELECT id into userId from users where nickname = 닉네임;
+	INSERT INTO goal(user_id, goal, target_date, target_kg)
+    	VALUES (userId, 목표타입, 목표기한, 목표무게);
 	END
+	// DELIMITER ;
 
-  	CALL setGoal('yeji', '근육량증가', '2024-10-10', 24.02); 
+  	CALL 목표등록('yeji', '근육량증가', '2024-10-10', 24.02); 
 ```
 <br> 
   <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/ecfd7413-e964-4c85-8dae-273b19f6d5ce", height=150><br> 
@@ -286,18 +287,18 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 
 ```sql
 	DELIMITER //
-	CREATE PROCEDURE add_friends (in nickname1 varchar(255), in nickname2 varchar(255))
+	CREATE PROCEDURE 친구추가 (in 내_닉네임 varchar(255), in 친구_닉네임 varchar(255))
 	BEGIN
-		DECLARE userId1 INT;
-		DECLARE userId2 INT;
-		SELECT id into userId1 from users where nickname = nickname1;
-		SELECT id into userId2 from users where nickname = nickname2;
-		INSERT INTO friend (user_id1,user_id2) values (userId1, userId2);
-
+	DECLARE userId1 INT;
+	DECLARE userId2 INT;
+	SELECT id into userId1 from users where nickname = nickname1;
+	SELECT id into userId2 from users where nickname = nickname2;
+	INSERT INTO friend (user_id1,user_id2) values (userId1, userId2);
 	END //
 	DELIMITER  ;
 
-	CALL add_friends('yeji','dding2');  
+
+	CALL 친구추가('yeji','dding2');  
 ```
 <br> 
 <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/3d43ac13-4ee3-43c4-aecf-c96e62e17b25", height=100><br> 
@@ -330,7 +331,7 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	END //
 	DELIMITER ;
 
-	CALL viewFriendsGoal('yeji','dding2') ;  
+	CALL 친구_목표_조회('yeji','dding2') ;  
 ```
 <br> 
 <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/85f0ef2e-1eff-4b1b-af07-9a2f6bbfdc23", height=110><br> 
