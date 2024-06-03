@@ -185,7 +185,7 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
  	[ 회원 상세 기록 추가 + 해당 회원 목표에 관한 진행상황 내역이 없다면 추가 ]<br> 
 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/82631599-aada-4f72-ba5f-f7e0afa9d7a7", height=110><br> 
 	user_id=2 회원이 '근육량증가'라는 새로운 목표 등록<br> 
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/a1d911af-722f-4067-933c-15f4141b0bb2", height=130><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/116091798/558eafb3-fcd7-41fc-b68f-7d9188c2a689", height=130><br> 
 	새로 등록한 목표에 관한 진행상황 내역은 아직 없음<br>
 	<br> 
 	<pre><code>
