@@ -50,7 +50,7 @@
 <hr> 
 
 ### 🎨 ERD
-![image](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/c5932e45-79de-4592-a872-a6a4ae8edefb)
+![Copy of 운동 관리 시스템](https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/89395493/88226a49-b815-43f0-8dfe-0851a624f365)
 <br>
 <br>
 
