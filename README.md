@@ -9,10 +9,10 @@
 <table>  
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/qkdrmawll"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/841a28b9-d43a-4d82-baa7-d02e683d364f" width="150px;" alt=""/><br /><sub><b>팀장 : 방은지 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/tteia"><img src="https://github.com/qkdrmawll/git_practice/assets/89395493/3c0b7f9f-c112-4144-8ed6-331089ec8416" width="150px;" alt=""/><br /><sub><b>팀원 : 최아영 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/H-Yeji"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/cbd8b982-6313-4bb3-965f-d00b8009a16d" width="150px;" alt=""/><br /><sub><b>팀원 : 홍예지 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/leem5514"><img src="https://github.com/qkdrmawll/git_practice/assets/89395493/abb10bf0-0f00-4ac6-b1aa-073708b9396e" width="150px;" alt=""/><br /><sub><b>팀원 : 이명규 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/qkdrmawll"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/121751114/a0ee4194-aef1-4144-b4a9-f5e161cea4ca" width="150px" height="150px" alt=""/><br /><sub><b>팀장 : 방은지 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/tteia"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/121751114/e8510022-a8c4-4eb2-99b1-816f852864f1" width="150px" height="150px" alt=""/><br /><sub><b>팀원 : 최아영 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/H-Yeji"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/121751114/991a3c30-25a0-43c3-91f1-25707b40767b" width="150px" height="150px" alt=""/><br /><sub><b>팀원 : 홍예지 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/leem5514"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/121751114/b93378a9-5876-402d-9188-f48ee8f6a53a" width="150px" height="150px" alt=""/><br /><sub><b>팀원 : 이명규 </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
