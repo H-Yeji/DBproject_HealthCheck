@@ -35,7 +35,7 @@ begin
 			if exists (select id from progress where goal_id=goalID_W) then
 				update progress set remain_kg=몸무게-targetKG_W where goal_id=goalID_W;
 			else
-				insert into progress(user_id, goal_id, remain_kg) values(userID, goalID_M, 몸무게-targetKG_W);
+				insert into progress(user_id, goal_id, remain_kg) values(userID, goalID_W, 몸무게-targetKG_W);
 			end if;
 		end if;
     
