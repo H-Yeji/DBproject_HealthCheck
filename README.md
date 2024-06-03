@@ -169,6 +169,11 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 ``` 
 <br> 
 [ 회원 상세 기록 추가 + 해당 회원 목표에 관한 진행상황 내역이 있다면 업데이트 ] <br> 
+
+1. 입력받은 회원 인바디 정보 추가
+2. 진행상황 테이블 업데이트
+3. 목표 상태 업데이트
+   
 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/8d168d21-7d40-4d49-aaf1-eb53a90d49b4", height=110><br> 
 	회원 인바디 측정 결과 등록 전 회원 상세 테이블<br> 
 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0c5a290f-8be3-4dae-9975-22768f9021ec", height=110><br>
