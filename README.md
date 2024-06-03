@@ -10,9 +10,9 @@
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/qkdrmawll"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/841a28b9-d43a-4d82-baa7-d02e683d364f" width="150px;" alt=""/><br /><sub><b>팀장 : 방은지 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/tteia"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/b31e0bed-11aa-4363-b5bf-2f9b9e8ad4c3" width="150px;" alt=""/><br /><sub><b>팀원 : 최아영 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/tteia"><img src="https://github.com/qkdrmawll/git_practice/assets/89395493/3c0b7f9f-c112-4144-8ed6-331089ec8416" width="150px;" alt=""/><br /><sub><b>팀원 : 최아영 </b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/H-Yeji"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/cef94f09-9a8b-4abb-b573-c90e649117d4" width="150px;" alt=""/><br /><sub><b>팀원 : 홍예지 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/leem5514"><img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/1113ad4a-631a-48fa-8a0f-88a772682f9f" width="150px;" alt=""/><br /><sub><b>팀원 : 이명규 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/leem5514"><img src="https://github.com/qkdrmawll/git_practice/assets/89395493/abb10bf0-0f00-4ac6-b1aa-073708b9396e" width="150px;" alt=""/><br /><sub><b>팀원 : 이명규 </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
