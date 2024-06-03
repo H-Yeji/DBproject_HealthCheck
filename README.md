@@ -276,7 +276,7 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 ```
 <br>
 닉네임을 입력 받으면<br> 
-  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/11dcacdf-9f65-49d4-8aae-bf40b1149096", height=100><br> 
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/116091798/929b5bfd-57df-4bf7-88f0-4dd0f0d29b28", height=100><br> 
   CURDATE()를 활용해서 당일 기준 사용자가 섭취한 탄수화물, 단백질, 지방, 일일 섭취 칼로리를 합하여 제공
 <br>
 <br>
