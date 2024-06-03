@@ -58,9 +58,12 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 <hr> 
 
 ### 🖥️ 프로시저 
-✔️ 회원 가입 프로시저 <br> 
-
-```sql 
+<details>
+	<summary>🖇️ 프로시저 테스트</summary>
+	<br> 
+	✔️ 회원 가입 프로시저 <br> 
+	
+ ```sql 
 	DELIMITER //
 	CREATE PROCEDURE signUp(in nickname VARCHAR(255), in name VARCHAR(255), in email VARCHAR(255), in password VARCHAR(255), in phoneNumber VARCHAR(255), in age INT, in sex VARCHAR(255))
 	BEGIN  
@@ -69,6 +72,7 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	END
 	// DELIMITER ; 
 ```
+
 <br>
 <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0652b889-338a-4572-bbd3-3a19db149c75">
 	<pre><code>
@@ -78,6 +82,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	user_id=5 회원 추가 
 <br>
 <br>
+
+<hr>
+
 ✔️ 목표 등록 프로시저 <br>
 
 ```sql
@@ -96,7 +103,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
   <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/ecfd7413-e964-4c85-8dae-273b19f6d5ce", height=150><br> 
   user_id=2 회원의 새로운 목표 추가 (근육량증가)<br>
 <br>
-<br>
+
+<hr> 
+
 ✔️ 회원 상세 등록 프로시저 <br>
 
 ```sql
@@ -149,33 +158,33 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 ``` 
 <br> 
 [ 회원 상세 기록 추가 + 해당 회원 목표에 관한 진행상황 내역이 있다면 업데이트 ] <br> 
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/8d168d21-7d40-4d49-aaf1-eb53a90d49b4", height=130><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/8d168d21-7d40-4d49-aaf1-eb53a90d49b4", height=110><br> 
 	회원 인바디 측정 결과 등록 전 회원 상세 테이블<br> 
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0c5a290f-8be3-4dae-9975-22768f9021ec", height=130><br>
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/0c5a290f-8be3-4dae-9975-22768f9021ec", height=110><br>
 	회원 인바디 측정 결과 등록 전 진행상황 테이블 <br>
 	<br> 
 	<pre><code>
 	call 회원_인바디_정보_입력('tteia', 168, 50, 17.71, 24.03, 18.01, 1450); 
 	</code></pre>
 	닉네임 tteia 회원의 인바디 측정 결과 등록<br>
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/86ab006d-7b0f-4db9-8d12-8804eaf2291e", height=130><br>
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/86ab006d-7b0f-4db9-8d12-8804eaf2291e", height=110><br>
 	측정 결과가 회원 상세 테이블에 추가됨<br>
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/f267ab88-9e27-4875-b631-905729f040fe", height=130><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/f267ab88-9e27-4875-b631-905729f040fe", height=110><br> 
 	등록된 인바디 측정 결과를 토대로 진행상황 테이블의 남은 목표 갱신<br> 
 	<br> 
 	[ 회원 상세 기록 추가 + 진행상황 업데이트 + 상태 변경 ]<br> 
 	<pre><code>
 	call 회원_인바디_정보_입력('tteia', 168, 50, 17.71, 25.03, 17.01, 1470); 
 	</code></pre>
- 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/d83982ad-1180-46fe-b1ca-aed674904385", height=130><br>
+ 	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/d83982ad-1180-46fe-b1ca-aed674904385", height=110><br>
 	user_id=3 회원이 목표를 달성해서 남은 목표가 없음 확인<br>
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/586d9cb0-e9ba-42ac-aef5-8d1784ca4e65", height=130><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/586d9cb0-e9ba-42ac-aef5-8d1784ca4e65", height=110><br> 
 	user_id=3 회원의 목표 상태 '진행중' > '완료'로 업데이트<br> 
 	<br> 
  	[ 회원 상세 기록 추가 + 해당 회원 목표에 관한 진행상황 내역이 없다면 추가 ]<br> 
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/82631599-aada-4f72-ba5f-f7e0afa9d7a7", height=130><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/82631599-aada-4f72-ba5f-f7e0afa9d7a7", height=110><br> 
 	user_id=2 회원이 '근육량증가'라는 새로운 목표 등록<br> 
-	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/a1d911af-722f-4067-933c-15f4141b0bb2", height=150><br> 
+	<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/a1d911af-722f-4067-933c-15f4141b0bb2", height=130><br> 
 	새로 등록한 목표에 관한 진행상황 내역은 아직 없음<br>
 	<br> 
 	<pre><code>
@@ -186,6 +195,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	해당 목표에 대한 progress 새로 등록 성공 ✌🏻 
 	<br>
 	<br> 
+
+ <hr> 
+ 
 ✔️ 진행 상황 조회 프로시저 <br>
 
 ```sql
@@ -200,11 +212,14 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	// delimiter ;
 
 	call 진행상황_조회('tteia');  
-```
+``` 
 <br> 
-<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/71df5b66-d221-402e-851a-aaceffb120f9", height=130><br> 
+<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/71df5b66-d221-402e-851a-aaceffb120f9", height=100><br> 
 닉네임 tteia 회원의 진행상황 조회<br> 
 <br>
+
+<hr>
+
 ✔️ 영양 섭취 프로시저 <br>
 
 ```sql
@@ -231,7 +246,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
   <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/9497159c-8875-4b30-8cc4-3156d06238ab", height=250><br> 
   테이블에 기록 추가<br>
 <br> 
-<br> 
+
+<hr>
+
 ✔️ 일일 섭취량 조회<br>
 
 ```sql
@@ -262,6 +279,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
   CURDATE()를 활용해서 당일 기준 사용자가 섭취한 탄수화물, 단백질, 지방, 일일 섭취 칼로리를 합하여 제공
 <br>
 <br>
+
+<hr>
+
 ✔️ 친구 추가 프로시저<br>
 
 ```sql
@@ -280,10 +300,13 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	CALL add_friends('yeji','dding2');  
 ```
 <br> 
-<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/3d43ac13-4ee3-43c4-aecf-c96e62e17b25"><br>
+<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/3d43ac13-4ee3-43c4-aecf-c96e62e17b25", height=100><br> 
   user_id=2인 yeji와 user_id=4인 dding2가 친구 목록에 추가 (친구 맺음) 
   <br>
   <br> 
+
+<hr>
+
 ✔️ 친구 목표 조회 프로시저 <br> 
 
 ```sql
@@ -310,7 +333,9 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 	CALL viewFriendsGoal('yeji','dding2') ;  
 ```
 <br> 
-<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/85f0ef2e-1eff-4b1b-af07-9a2f6bbfdc23", height=120><br> 
+<img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/85f0ef2e-1eff-4b1b-af07-9a2f6bbfdc23", height=110><br> 
   입력받은 두 회원이 친구일 경우 -> 친구의 목표 조회 가능<br>
-  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/17ea63f9-e58e-4110-bc3f-2e55cdf95a23", height=120><br> 
+  <img src="https://github.com/beyond-sw-camp/be07_1st_3team_healthcheck/assets/87412123/17ea63f9-e58e-4110-bc3f-2e55cdf95a23", height=110><br> 
   입력받은 두 회원이 친구가 아닐 경우 -> 친구의 목표 조회 불가능<br> 
+
+</details>
