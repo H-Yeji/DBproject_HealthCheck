@@ -29,6 +29,13 @@ HEALTH_CHECK는 사용자가 운동 목표를 설정하고 이를 기록하며, 
 </code></pre>
 <br>
 
+### 💡 프로젝트 필요성  
+<pre><code>
+
+	
+</code></pre>
+<br>
+
 ### 📌 기술 스택
  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Notion-black?style=for-the-badge&logo=Notion&logoColor=white"/>
 <br>
